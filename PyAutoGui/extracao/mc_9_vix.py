@@ -5,6 +5,7 @@ def wait(seconds):
     t.sleep(seconds)
 
 def type_with_interval(text, interval=0.25):
+
     p.write(text, interval=interval)
 
 def press_keys(*keys, interval=0.2):
@@ -44,6 +45,7 @@ def mc9_vix():
 
     type_with_interval(tipo_material)
 
+    
     press_key_with_repeats("down", repeats=3)
 
     press_keys('ctrl', 'a')
@@ -78,9 +80,10 @@ def mc9_vix():
     type_with_interval(caminho)
     press_keys('tab')
     type_with_interval("mc.9 vix.xls")
-    wait(3)
-    press_keys("enter")
     wait(10)
+    press_keys('ctrl','s')
+    press_keys('alt', 'p')
+    wait(5)
     press_keys('alt', 'p')
     wait(5)
     press_keys('f12')

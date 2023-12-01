@@ -19,9 +19,9 @@ def ambiente():
     type_with_interval('SAP Logon')
 
     p.press('enter')
-    wait(4)
-    press_keys('alt', 'o')
-    wait(4)
+    wait(6)
+    press_keys('alt', 'l')
+    wait(6)
 
     user = "ASALVADOR"
     senha = "kmi2023"
