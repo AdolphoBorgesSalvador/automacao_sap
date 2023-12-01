@@ -13,6 +13,7 @@ def type_with_interval(text, interval=0.25):
 def press_keys(*keys, interval=0.25):
     p.hotkey(*keys, interval=interval)
 
+caminho = "C:\\Users\\fsp_adolpho.salvador\\Desktop\\RELATORIOS\\"
 
 def vix():
     print("entrou no vix")
@@ -22,7 +23,7 @@ def vix():
     press_keys('f2')
     wait(4)
     press_keys('f8')
-    wait(45)
+    wait(60)
 
     press_keys("alt")
     wait(5)
@@ -30,19 +31,20 @@ def vix():
     wait(5)
     press_keys("a")
     wait(5)
-    press_keys('alt', 's')
-    wait(5)
-    p.press("down")
-    type_with_interval('r')
-    wait(5)
-    press_keys('alt', 'n')
     type_with_interval('VIX.XLSX')
-    p.press("enter")
+    p.press('tab', presses=6, interval=0.25)
+    wait(5)
+    p.press("space")
+    wait(5)
+    type_with_interval(caminho)
+    wait(5)
+    press_keys('alt', 'l')
+    wait(3)
     press_keys('alt', 's')
-    wait(5)
-    press_keys('alt', 'P')
-    wait(5)
-    press_keys('alt', 'P')
+    wait(3)
+    press_keys('alt', 'p')
+    wait(3)
+    press_keys('alt', 'p')
     wait(20)
 
     target_window_title = "Mapa PSI - por centro"

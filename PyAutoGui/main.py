@@ -7,18 +7,21 @@ from mapas.ambiente_module import ambiente
 from mapas.geral_module import geral
 from extracao.mc_9_vix import mc9_vix
 from extracao.mc_9_mao import mc9_mao
+from extracao.fup import fup
 
 def check_for_interrupt():
     return keyboard.is_pressed('Esc')
 
 def main():
     print("Entrou no main2")
-    #ambiente()
-    #vix()
-   # mao()
-   # geral()
+
+    ambiente()
+    vix()
+    mao()
+    geral()
     mc9_vix()
     mc9_mao()
+    fup()
 
     p.alert(text='Código finalizado com sucesso.', title='Fim', button='OK')
     
